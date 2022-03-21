@@ -1,0 +1,16 @@
+[package]
+name = "hacspec-sike"
+version = "0.1.0"
+authors = ["Benjamin S. Hvass <bsh@cs.au.dk>"]
+edition = "2018"
+
+[lib]
+path = "src/main.rs"
+
+[dependencies]
+hacspec-lib = { path = "../../lib" }
+
+[dev-dependencies]
+hacspec-dev = { path = "../../utils/dev" }
+criterion = "0.3"
+rand = "0.8"
