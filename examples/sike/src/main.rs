@@ -579,9 +579,14 @@ pub fn j_inv_p(a: Fp2, c: Fp2) -> Fp2 {
 pub fn get_2_isog(p: Point) -> (Fp2, Fp2) {
     let (x,z) = p;
 
+    // a = 2*(z^2 - 2*x^2)
+    // c = z^2
+
     let a = fp2sqr(x);
+    let a = fp2add(a,a); // why do I have to add this line
     let c = fp2sqr(z);
     let a = fp2sub(c,a);
+    let a = fp2add(a,a); // why do I have to add this line
 
     (a,c)
 }
