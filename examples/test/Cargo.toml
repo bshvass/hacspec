@@ -1,11 +1,11 @@
 [package]
-name = "hacspec-sike"
+name = "hacspec-test"
 version = "0.1.0"
 authors = ["Benjamin S. Hvass <bsh@cs.au.dk>"]
 edition = "2018"
 
 [lib]
-path = "src/sike.rs"
+path = "src/test.rs"
 
 [dependencies]
 hacspec-lib = { path = "../../lib" }
