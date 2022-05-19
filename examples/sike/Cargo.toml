@@ -14,3 +14,5 @@ hacspec-lib = { path = "../../lib" }
 hacspec-dev = { path = "../../utils/dev" }
 criterion = "0.3"
 rand = "0.8"
+quickcheck = "1"
+quickcheck_macros = "1"
